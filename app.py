@@ -91,7 +91,9 @@ def app():
             session.add(new_book)
             session.commit()
         elif choice == "2":
-            pass
+            for book in session.query(Book):
+                print(f"{book.id} | {book.title} | {book.author}")
+            input("Press any key to continue")
         elif choice == "3":
             pass
         elif choice == "4":
