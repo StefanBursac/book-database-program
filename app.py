@@ -206,7 +206,7 @@ def app():
             input("Press any key to return to main menu. ")
 
         else:
-            print("Good by")
+            print("Goodbye")
             app_running = False
             
 
